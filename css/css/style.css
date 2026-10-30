@@ -1,0 +1,57 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    min-height: 64px;
+    padding: 0 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+    background: #fff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
+}
+
+.brand {
+    color: #222;
+    font-size: 1.35rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.brand span {
+    color: #3978f6;
+}
+
+.navbar nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.navbar nav a {
+    color: #333;
+    text-decoration: none;
+}
+
+.navbar nav a:hover {
+    color: #3978f6;
+}
+
+@media (max-width: 520px) {
+    .navbar {
+        padding: 16px 5%;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .navbar nav {
+        gap: 12px 18px;
+    }
+}
